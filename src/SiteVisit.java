@@ -5,10 +5,10 @@ import java.util.HashMap;
  * Created by Goki_PC on 3/8/2017.
  */
 public class SiteVisit {
-    String pageId;
-    Timestamp eventTime;
-    String customerId;
-    HashMap<String, String> tags;
+    private String pageId;
+    private Timestamp eventTime;
+    private String customerId;
+    private HashMap<String, String> tags;
 
     public SiteVisit() {
     }
@@ -26,8 +26,8 @@ public class SiteVisit {
         return eventTime;
     }
 
-    public void setEventTime(Timestamp eventTime) {
-        this.eventTime = eventTime;
+    public void setEventTime(String eventTime) {
+        this.eventTime = Timestamp.valueOf(eventTime);
     }
 
     public String getCustomerId() {

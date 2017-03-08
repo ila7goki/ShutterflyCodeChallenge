@@ -5,12 +5,10 @@ import java.sql.Timestamp;
  */
 public class Order {
 
-    //{"type": "ORDER", "verb": "NEW", "key": "68d84e5d1a43", "event_time": "2017-01-06T12:55:55.555Z", "customer_id": "96f55c7d8f42", "total_amount": "12.34 USD"}
-
-    String orderId;
-    String customerId;
-    Timestamp eventTime;
-    double totalAmount;
+    private String orderId;
+    private String customerId;
+    private Timestamp eventTime;
+    private double totalAmount;
 
     public Order() {
     }
@@ -37,7 +35,7 @@ public class Order {
     }
 
     public void setEventTime(String eventTime) {
-       // System.out.println(eventTime);
+        // System.out.println(eventTime);
         this.eventTime = Timestamp.valueOf(eventTime);
     }
 

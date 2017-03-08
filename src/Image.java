@@ -5,11 +5,11 @@ import java.sql.Timestamp;
  */
 public class Image {
 
-    String imageId;
-    Timestamp eventTime;
-    String customerId;
-    String cameraMake;
-    String cameraModel;
+    private String imageId;
+    private Timestamp eventTime;
+    private String customerId;
+    private String cameraMake;
+    private String cameraModel;
 
     public Image() {
     }

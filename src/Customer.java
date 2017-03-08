@@ -4,11 +4,11 @@ import java.sql.Timestamp;
  * Created by Goki_PC on 3/6/2017.
  */
 public class Customer {
-    String customerId;
-    Timestamp eventTime;
-    String lastName;
-    String adrCity;
-    String adrState;
+    private String customerId;
+    private Timestamp eventTime;
+    private String lastName;
+    private String adrCity;
+    private String adrState;
 
     public Customer() {
         // empty constructor
